@@ -1,0 +1,48 @@
+:root {
+	/**
+		*
+		* PRIMARY
+		*
+		*/
+	--primary-hue: 252;
+	--primary-saturation: 81%;
+	--primary-lightness: 58%;
+	--primary-lightness-rest: calc(var(--primary-lightness) / 5);
+	--primary-200-lightness: calc(
+		var(--primary-lightness) - calc(var(--primary-lightness-rest))
+	);
+	--primary-300-lightness: calc(
+		var(--primary-lightness) - calc(var(--primary-lightness-rest) * 2)
+	);
+	--primary-400-lightness: calc(
+		var(--primary-lightness) - calc(var(--primary-lightness-rest) * 3)
+	);
+	--primary-500-lightness: calc(
+		var(--primary-lightness) - calc(var(--primary-lightness-rest) * 4)
+	);
+	--primary-100-color: hsl(
+		var(--primary-hue),
+		var(--primary-saturation),
+		var(--primary-lightness)
+	);
+	--primary-200-color: hsl(
+		var(--primary-hue),
+		var(--primary-saturation),
+		var(--primary-200-lightness)
+	);
+	--primary-300-color: hsl(
+		var(--primary-hue),
+		var(--primary-saturation),
+		var(--primary-300-lightness)
+	);
+	--primary-400-color: hsl(
+		var(--primary-hue),
+		var(--primary-saturation),
+		var(--primary-400-lightness)
+	);
+	--primary-500-color: hsl(
+		var(--primary-hue),
+		var(--primary-saturation),
+		var(--primary-500-lightness)
+	);
+}
